@@ -10,8 +10,10 @@ export default function Home() {
 
             <div className="mainContainer">
                 <div className="sidebar">
+                    {/*aca se imprimen los elementos */}
                     {users.map((user) => (
                         <div>
+                            {/*usando Link y su componente to y despues la ruta a la cual se va a dirijir al hacer click y mostrar la informacion del contacto*/}
                             <Link to={`/contact/${user.id}`}>{user.name}</Link>{''}
                         </div>
                     ))}
